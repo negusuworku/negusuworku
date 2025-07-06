@@ -4,7 +4,8 @@
 
 <!-- Typing SVG -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+Negusu+Gebrmichael!;Data+Scientist+%20C+Public+Health+Expert+%20C+GIS+Specialist;Global+Health+Consultant+%20C+Python+%7C+SAS+%7C+Tableau+%20C+Epidemiology" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+Negusu+Gebrmichael!;Data+Scientist+%20C+Public+Health+Expert+%20C+GIS+Specialist;Global+Health+Consultant+%20C+Python+%7C+SAS+%7C+Tableau+%20C+Epidemiology" 
+    alt="Typing SVG" />
 </p>
 
 **Data Scientist | Information Management for Public Health | GIS & Epidemiology Expert**  
