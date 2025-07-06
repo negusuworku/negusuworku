@@ -100,8 +100,5 @@ Saddened by the recent loss of our beloved star Diogo Jota — may he rest in pe
 📚 Reading health policy, AI for health, and epidemiological case studies
 
 📬 Let's Connect!
-📧 Email: negusuworku@gmail.com
+📧 Email: negusu2022@gmail.com
 
-🌐 LinkedIn (replace with actual)
-
-🧑‍💻 GitHub
