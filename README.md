@@ -48,7 +48,7 @@ I hold advanced diplomas in **Applied Epidemiology (Emory University)** and **Da
 
 ---
 
-## 📈 Notable Features & Projects
+## 📈  Projects
 
 - 🚨 Real-time **disease outbreak surveillance systems**
 - 🗺️ High-resolution **epidemiological maps for emergencies**  
@@ -58,7 +58,7 @@ I hold advanced diplomas in **Applied Epidemiology (Emory University)** and **Da
 
 ---
 
-## 🐞 Known Bugs / Challenges
+## 🐞 Additional Knowledage
 
 - Occasional Tableau-Python integration issues
 - Epi-Info export limitations
