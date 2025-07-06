@@ -1,6 +1,12 @@
 
 # 🌍 Negusu Worku Gebrmichael
 
+
+<!-- Typing SVG -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+Negusu+Worku+Gebrmichael!;Data+Scientist+%7C+Public+Health+Expert+%7C+GIS+Specialist;Global+Health+Consultant+%7C+Python+%7C+SAS+%7C+Tableau+%7C+Epidemiology" alt="Typing SVG" />
+</p>
+
 **Data Scientist | Information Management for Public Health | GIS & Epidemiology Expert**  
 _Available for global collaboration in public health emergencies and data science projects._
 
@@ -72,10 +78,6 @@ I hold advanced diplomas in **Applied Epidemiology (Emory University)** and **Da
 - 📺 Watching English Premier League matches — I'm a proud **Liverpool FC fan**  
   > Saddened by the recent loss of our beloved player **Diogo Jota** — may he rest in peace. YNWA ❤️
 
-<!-- Typing SVG -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=435&lines=Hi%2C+I'm+Negusu+Worku+Gebrmichael!;Data+Scientist+%7C+Public+Health+Expert+%7C+GIS+Specialist;Global+Health+Consultant+%7C+Python+%7C+SAS+%7C+Tableau+%7C+Epidemiology" alt="Typing SVG" />
-</p>
 
 ## ⚙️ How to Use
 
