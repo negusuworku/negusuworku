@@ -4,7 +4,7 @@
 
 <!-- Typing SVG -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=1000&lines=Hi%20+I'm+Negusu+Gebrmichael!;Data+Scientist+%20+Public+Health+Expert+%20+GIS+Specialist;Global+Health+Consultant+%20+Python+%20C+SAS+%20+Tableau+%20+Epidemiology" 
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=1000&lines=Hi%20+I'm+Mr.Negusu+Gebrmichael!;Data+Scientist+%20+Public+Health+Expert+%20+GIS+Specialist;Global+Health+Consultant+%20+Python+%20C+SAS+%20+Tableau+%20+Epidemiology" 
     alt="Typing SVG" />
 </p>
 
