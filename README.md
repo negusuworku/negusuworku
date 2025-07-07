@@ -17,7 +17,7 @@ _Available for global collaboration in public health emergencies and data scienc
 
 With over **30+ years of experience**, I specialize in **data science, public health emergency response, GIS mapping**, and **epidemiological research** across **Africa, Asia, the Middle East, Europe, and North America**. My journey includes collaborations with **WHO, UNICEF, CDC, FHI/USAID, and Save the Children**, among others.
 
-I hold advanced Advanced Post graaduate fellow diplomas in **Applied Epidemiology (Emory University)** and **Data Science & AI (Toronto, Canada)**. I’ve also contributed to over **100+ research thesis at school of public health,**, **10+ global publications**, and national and international health surveys.
+I hold advanced Advanced Post graaduate fellow diplomas in **Applied Epidemiology (Emory University)** and **Data Science & Machine learning (Toronto, Canada)**. I’ve also contributed to over **100+ Public Health and ffield Epidemiology research thesis at school of public health,**, **10+ global publications**, and national and international health surveys.
 
 ---
 
