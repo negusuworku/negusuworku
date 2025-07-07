@@ -70,7 +70,6 @@ I hold advanced Advanced Post graaduate fellow diplomas in **Applied Epidemiolog
 
 - [@negusuworku](https://github.com/negusuworku)
 
----notepad README.md
 
 ## ⚽ Personal Interests
 
