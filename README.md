@@ -30,7 +30,7 @@ I hold advanced Advanced Post graaduate fellow diplomas in **Applied Epidemiolog
 - **Visualization & Reporting**: Infographics, Dashboards, Storytelling, Tableau, Power BI
 - **Programming**: Python, SAS, SQL  
 - **Field Work**: Health surveys, GPS mapping, remote coordination  
-- **Capacity Building**: Guest lecturer for the first it is kind course design and delivery the lecture as a guest lectuer at Addis Ababa niversity, School of Public Health, national/international training programs  
+- **Capacity Building**: Guest lecturer for the first it is kind course design and delivery the lecture as a guest lectuer at Addis Ababa University, School of Public Health, national/international training programs  
 - **Languages**: English, Amharic  
 
 ---
