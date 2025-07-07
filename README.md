@@ -15,9 +15,9 @@ _Available for global collaboration in public health emergencies and data scienc
 
 ## 🧠 About Me
 
-With over **20+ years of experience**, I specialize in **data science, public health emergency response, GIS mapping**, and **epidemiological research** across **Africa, Asia, the Middle East, Europe, and North America**. My journey includes collaborations with **WHO, UNICEF, CDC, FHI/USAID, and Save the Children**, among others.
+With over **30+ years of experience**, I specialize in **data science, public health emergency response, GIS mapping**, and **epidemiological research** across **Africa, Asia, the Middle East, Europe, and North America**. My journey includes collaborations with **WHO, UNICEF, CDC, FHI/USAID, and Save the Children**, among others.
 
-I hold advanced diplomas in **Applied Epidemiology (Emory University)** and **Data Science & AI (Toronto, Canada)**. I’ve also contributed to over **100+ research theses**, **10+ global publications**, and national and international health surveys.
+I hold advanced Advanced Post graaduate fellow diplomas in **Applied Epidemiology (Emory University)** and **Data Science & AI (Toronto, Canada)**. I’ve also contributed to over **100+ research thesis at school of public health,**, **10+ global publications**, and national and international health surveys.
 
 ---
 
@@ -27,10 +27,10 @@ I hold advanced diplomas in **Applied Epidemiology (Emory University)** and **Da
 - **GIS & Mapping**: ArcGIS, ArcGIS Pro, Tableau, Power BI  
 - **Public Health Data Management**: Epidemiology, Outbreak Surveillance, Risk Assessment  
 - **Database Systems**: SQL, CesPRO, Epi-Info  
-- **Visualization & Reporting**: Infographics, Dashboards, Storytelling  
+- **Visualization & Reporting**: Infographics, Dashboards, Storytelling, Tableau, Power BI
 - **Programming**: Python, SAS, SQL  
 - **Field Work**: Health surveys, GPS mapping, remote coordination  
-- **Capacity Building**: Guest lecturer, national/international training programs  
+- **Capacity Building**: Guest lecturer for the first it is kind course design and delivery the lecture as a guest lectuer at Addis Ababa niversity, School of Public Health, national/international training programs  
 - **Languages**: English, Amharic  
 
 ---
