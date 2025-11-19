@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(to bottom, #fff8f0, #fff0e0);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------ Navigation Bar ------------------------ */
+nav {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+nav a:hover {
+    color: #ffd700;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ------------------------ Section Enhancements ------------------------ */
+section, .content-container, .form-container {
+    border: 3px solid #3107ec;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+}
+
+/* ------------------------ Images ------------------------ */
+section img, .creator img, .gallery-container img {
+    border: 2px solid #1829e6;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------ Headings ------------------------ */
+h1 {
+    text-shadow: 2px 2px 4px #aaa;
+    letter-spacing: 0.5px;
+}
+h2 {
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+/* ------------------------ Creator Section ------------------------ */
+.creator {
+    background-color: #f0e6ff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* ------------------------ Contact Form ------------------------ */
+.form-container input,
+.form-container textarea {
+    transition: all 0.3s;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #3107ec;
+    box-shadow: 0 0 10px rgba(49,7,236,0.4);
+}
+
+/* Submit Button Hover */
+.form-container button:hover {
+    background-color: #1829e6;
+}
+
+/* ------------------------ Footer ------------------------ */
+.footer {
+    background-color: #f0f8ff;
+    border-top: 3px solid #3107ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.footer a {
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #e62b1e;
+}
+
+/* ------------------------ Gallery Page Footer ------------------------ */
+.gallery-footer {
+    text-align: center;
+    background-color: #3107ec; /* cozy purple background */
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+}
+.gallery-footer nav a {
+    color: #ffd700; /* golden links */
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+.gallery-footer nav a:hover {
+    text-decoration: underline;
+}
+.gallery-footer p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+.gallery-footer p a {
+    color: #ff6f61; /* standout email link */
+    text-decoration: none;
+    font-weight: 600;
+}
+.gallery-footer p a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------ Lightbox (Image Magnify Feature) ------------------------ */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}

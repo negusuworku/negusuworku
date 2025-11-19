@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Infographics Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin:0;
+            font-family: 'Poppins', sans-serif;
+            background-color:#fff8f0;
+            color:#333;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            background-color:#3107ec;
+            padding:15px;
+            border-radius:10px;
+        }
+        nav a {
+            text-decoration:none;
+            margin: 0 25px;
+            font-weight:600;
+            font-size:1.5rem;
+            color:white;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1829e6;
+            margin: 50px 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .form-container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 40px 20px;
+            background: linear-gradient(to right, #ffe4c4, #ffd700);
+            border-radius:15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .form-container label {
+            display:block;
+            font-weight:600;
+            margin-bottom:5px;
+            font-size:1.2rem;
+        }
+        .form-container input,
+        .form-container textarea {
+            width:100%;
+            padding:10px;
+            margin-bottom:20px;
+            border-radius:8px;
+            border:1px solid #ccc;
+            font-size:1rem;
+        }
+        .form-container button {
+            background-color:#3107ec;
+            color:white;
+            font-weight:bold;
+            font-size:1.2rem;
+            padding:12px 25px;
+            border:none;
+            border-radius:10px;
+            cursor:pointer;
+        }
+        .form-container button:hover {
+            background-color:#1829e6;
+        }
+        .mailto-link {
+            text-align:center;
+            margin:20px 0;
+            font-size:1.2rem;
+        }
+        .mailto-link a {
+            color:#e62b1e;
+            text-decoration:none;
+            font-weight:bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #3107ec;
+            font-weight: bold;
+            margin: 50px 0 30px 0;
+        }
+        .footer a {
+            color:#e62b1e;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Heading -->
+    <h1>Contact Us</h1>
+
+    <!-- Intro Text -->
+   <p style="text-align:center;">
+    Reach out with your feedback, questions, or collaboration ideas. Fill out the form below or email directly<br>
+    to obtain more analyzed data and/or the methods and materials used during the data analysis and mapping.
+</p>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <form action="mailto:negusuworkugm@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Mailto Link -->
+    <div class="mailto-link">
+        Or email directly: <a href="mailto:negusuworkugm@gmail.com">negusuworkugm@gmail.com</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Name: Mr. Negusu GEBRMICHAEL | Email: <a href="mailto:negusuworkugm@gmail.com">negusuworkugm@gmail.com</a> | Date of Production: November, 2025
+    </div>
+
+</body>
+</html>
