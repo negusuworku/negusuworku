@@ -14,17 +14,25 @@ Currently, I am developing a personal website to showcase an infographics platfo
 
 ---
 
-## 🔬 Expertise
+Expertise
 
-- **Data Science & Statistical Modeling**: Python, R, SAS, SPSS, STATA  
-- **GIS & Mapping**: ArcGIS, ArcGIS Pro, Tableau, Power BI  
-- **Public Health Data Management**: Epidemiology, Outbreak Surveillance, Risk Assessment  
-- **Database Systems**: SQL, CesPRO, Epi-Info  
-- **Visualization & Reporting**: Infographics, Dashboards, Storytelling, Tableau, Power BI
-- **Programming**: Python, SAS, SQL  
-- **Field Work**: Health surveys, GPS mapping, remote coordination  
-- **Capacity Building**: Guest lecturer for the first it is kind course design and delivery the lecture as a guest lectuer at Addis Ababa University, School of Public Health, national/international training programs  
-- **Languages**: English, Amharic  
+Data Science & Statistical Modeling: Python, R, SAS, SPSS, STATA
+
+GIS & Mapping: ArcGIS, ArcGIS Pro, Tableau, Power BI
+
+Public Health & Field Epidemiology Data Management: Epidemiology, outbreak surveillance, emergency response, risk assessment
+
+Database Systems: SQL, CesPRO, Epi-Info
+
+Visualization & Reporting: Infographics, dashboards, data storytelling (Tableau, Power BI)
+
+Programming: Python, SAS, SQL
+
+Field Work: Health surveys, GPS/GIS mapping, remote field coordination
+
+Capacity Building & Training: Designed and delivered specialized courses; served as a guest lecturer for a pioneering training program at Addis Ababa University, School of Public Health, and facilitated multiple national and international training programs
+
+Languages: English, Amharic
 
 ---
 
