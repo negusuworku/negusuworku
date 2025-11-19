@@ -15,6 +15,7 @@ Currently, I am developing a personal website to showcase an infographics platfo
 ---
 
 Expertise
+
 1.	Data Science & Statistical Modeling: Python, R, SAS, SPSS, STATA
 2.	GIS & Mapping: ArcGIS, ArcGIS Pro, Tableau, Power BI
 3.	Public Health & Field Epidemiology Data Management: Epidemiology, outbreak surveillance, emergency response, risk assessment
@@ -23,8 +24,9 @@ Expertise
 6.	Programming: Python, SAS, SQL
 7.	Field Work: Health surveys, GPS/GIS mapping, remote field coordination
 8.	Capacity Building & Training: Designed and delivered specialized courses; served as a guest lecturer for a pioneering training program at Addis Ababa University, School of Public Health, and facilitated multiple national and international training programs,
-9.	Languages: English, Amharic
-
+9.	Web-development 
+10.	IT Specialist ( MCSE) Microsoft Certified System Engineer ( MCSE )
+11.	Languages: English, Amharic
 
 ---
 
