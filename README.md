@@ -1,6 +1,6 @@
 <!-- Typing SVG -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=1000&lines=Hi%2C%20I'm%20Mr.%20Negusu%20Gebrmichael!;Data%20Scientist%2C%20Public%20Health%20Expert%2C%20GIS%20Specialist;Global%20Health%20Consultant%2C%20Python%2C%20SAS%20Programmer%2C%20Tableau%20Data%20Visualization%2C%20Epidemiologist" alt="Typing SVG" /></p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&center=true&vCenter=true&width=1000&lines=Hi%2C%20I'm%20Mr.%20Negusu%20Gebrmichael!;Data%20Scientist%2C%20International%20Applied%20Epidemiology%2C%20GIS%20Specialist;Global%20Health%20Consultant%2C%20Python%2C%20SAS%20Programmer%2C%20Tableau%20Data%20Visualization%2C%20Epidemiologist" alt="Typing SVG" /></p>
 
 ---
 
