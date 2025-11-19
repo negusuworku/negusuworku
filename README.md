@@ -58,6 +58,8 @@ Expertise
 - Occasional Tableau-Python integration issues
 - Epi-Info export limitations
 - SQL encoding inconsistencies across platforms
+- Web development
+- JavaScript Programming
 
 ---
 
