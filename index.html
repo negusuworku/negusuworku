@@ -1,155 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographics Dashboard for Data Sharing</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-     <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        body {
-            margin:0;
-            font-family: 'Poppins', sans-serif;
-            background-color:#fff8f0;
-            color:#333;
-        }
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 700;
-            color: #1829e6;
-            margin: 50px 20px;
-            line-height: 1.4;
-        }
-        h2 {
-            text-align: left;
-            font-size: 1.7rem;
-            line-height: 1.8;
-            color: #3515ed;
-            margin:0;
-        }
-        nav a {
-            text-decoration:none;
-            margin: 0 25px;
-            font-weight:600;
-            font-size:1.5rem;
-            color:white;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-            background-color:#3107ec;
-            padding:15px;
-            border-radius:10px;
-        }
-        section {
-            padding:40px 20px;
-            max-width:1000px;
-            margin:30px auto;
-            text-align:center;
-            background: linear-gradient(to right, #ffe4c4, #ffd700);
-            border-radius:15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        section img {
-            width:450px;
-            height:auto;
-            border-radius:15px;
-            margin-bottom:30px;
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
-            cursor: pointer; /* lets user know image is clickable */
-            transition: transform 0.3s ease;
-        }
-        section img:hover {
-            transform: scale(1.02);
-        }
-        .footer {
-            text-align: center;
-            font-size: 1rem;
-            color: #3107ec;
-            font-weight:bold;
-            margin: 50px 0 30px 0;
-        }
-        .footer a {
-            color:#222020;
-            text-decoration:none;
-        }
-
-        /* --- Lightbox style --- */
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 999;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negusu Final JavaScript Project</title>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<!-- ---------- LOGIN ---------- -->
+<div id="loginContainer">
+    <div id="loginBox">
+        <h2>Login 🔑</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+</div>
 
-    <!-- Main Heading -->
-    <h1>
-        Infographics Dashboard for Data Sharing platform for public health surveillance and public health emergency data
-    </h1>
-
-    <!-- Intro Section with Image and Description -->
-    <section>
-        <!-- 👇 Clickable image that opens magnified view -->
-        <img src="images/doc219.jpg" alt="Sample infographic showing data trends" onclick="openLightbox(this)">
-        <h2>
-            This platform provides a centralized dashboard for public health surveillance and emergency data.<br>
-            It is designed for decision-makers to access clear, actionable insights<br>
-            and for partner organizations to obtain accurate information, enabling them to implement appropriate measures efficiently.<br>
-            Through interactive infographics, charts, and visual summaries, complex data becomes easy to understand and share.
-        </h2>
-    </section>
-
-    <!-- Lightbox (hidden until image clicked) -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img" src="">
+<!-- ---------- DASHBOARD ---------- -->
+<div id="dashboardContainer">
+    <div id="dashboardHeader">
+        <h2>Welcome to Negusu Final JavaScript Project</h2>
+        <button onclick="logout()">Logout</button>
     </div>
 
-    <!-- Footer Info -->
-    <div class="footer">
-        Name: Mr. Negusu GEBRMICHAEL | Email: 
-        <a href="mailto:negusuworkugm@gmail.com">negusuworkugm@gmail.com</a> | 
-        Date of Production: November, 2025
-    </div>
+    <div class="sections">
+        <!-- COLOR CHANGER -->
+        <div class="section">
+            <h3>🎨 Color Changer</h3>
+            <div id="colorBox"></div>
+            <div class="colorButtons">
+                <button onclick="changeColor('red')">Red</button>
+                <button onclick="changeColor('blue')">Blue</button>
+                <button onclick="changeColor('green')">Green</button>
+                <button onclick="changeColor('yellow')">Yellow</button>
+                <button onclick="randomColor()">Random</button>
+            </div>
+            <p id="colorCode"></p>
+        </div>
 
-    <!-- ✅ Lightbox JavaScript -->
-    <script>
-        function openLightbox(img) {
-            document.getElementById('lightbox-img').src = img.src;
-            document.getElementById('lightbox').style.display = 'flex';
-        }
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-        }
-    </script>
+        <!-- SWITCH CALCULATOR -->
+        <div class="section">
+            <h3>➗ Switch Calculator</h3>
+            <input type="text" id="display" disabled placeholder="0">
+            <div class="calculator">
+                <button class="number" onclick="handleClick('7')">7</button>
+                <button class="number" onclick="handleClick('8')">8</button>
+                <button class="number" onclick="handleClick('9')">9</button>
+                <button class="operator" id="divBtn" onclick="handleClick('div')">/</button>
+
+                <button class="number" onclick="handleClick('4')">4</button>
+                <button class="number" onclick="handleClick('5')">5</button>
+                <button class="number" onclick="handleClick('6')">6</button>
+                <button class="operator" onclick="handleClick('mul')">*</button>
+
+                <button class="number" onclick="handleClick('1')">1</button>
+                <button class="number" onclick="handleClick('2')">2</button>
+                <button class="number" onclick="handleClick('3')">3</button>
+                <button class="operator" onclick="handleClick('sub')">-</button>
+
+                <button class="number" onclick="handleClick('0')">0</button>
+                <button class="operator" id="modBtn" onclick="handleClick('mod')">%</button>
+                <button class="operator" onclick="handleClick('add')">+</button>
+                <button class="operator" onclick="handleClick('=')">=</button>
+
+                <button class="clear" onclick="handleClick('C')">C</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
