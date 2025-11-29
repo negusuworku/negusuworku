@@ -5,31 +5,40 @@ function login(){
     const msg = document.getElementById("loginMessage");
 
     msg.style.display = "block";
+
     if(!user && !pass){
         msg.innerText = "Please enter username and password";
-        msg.style.background="red"; msg.style.color="white";
+        msg.style.background="red"; 
+        msg.style.color="white";
         return;
     }
     if(!user){
         msg.innerText = "Please enter username";
-        msg.style.background="red"; msg.style.color="white";
+        msg.style.background="red"; 
+        msg.style.color="white";
         return;
     }
     if(!pass){
         msg.innerText = "Please enter password";
-        msg.style.background="red"; msg.style.color="white";
+        msg.style.background="red"; 
+        msg.style.color="white";
         return;
     }
+
     if(user === "admin" && pass === "12345"){
         msg.innerText = "Login Successful!";
-        msg.style.background="green"; msg.style.color="black";
+        msg.style.background="green"; 
+        msg.style.color="black";
+
         setTimeout(()=>{
             document.getElementById("loginContainer").style.display="none";
             document.getElementById("dashboardContainer").style.display="block";
         }, 1000);
+
     } else {
         msg.innerText = "Incorrect username or password";
-        msg.style.background="red"; msg.style.color="white";
+        msg.style.background="red"; 
+        msg.style.color="white";
     }
 }
 
@@ -37,6 +46,7 @@ function login(){
 function logout(){
     document.getElementById("dashboardContainer").style.display="none";
     document.getElementById("loginContainer").style.display="flex";
+
     document.getElementById("username").value="";
     document.getElementById("password").value="";
     document.getElementById("loginMessage").style.display="none";
@@ -70,17 +80,26 @@ function handleClick(value){
             display.value=currentInput;
             checkZeroForOperators();
             break;
+
         case 'add': case 'sub': case 'mul': case 'div': case 'mod':
-            if(currentInput===""){display.value="❗ Enter a number first"; break;}
+            if(currentInput===""){
+                display.value="❗ Enter a number first";
+                break;
+            }
             firstNumber=Number(currentInput);
             operator=value;
             currentInput="";
             checkZeroForOperators();
             break;
+
         case '=':
-            if(currentInput===""||operator===null){display.value="❗ Enter both numbers"; break;}
+            if(currentInput==="" || operator===null){
+                display.value="❗ Enter both numbers";
+                break;
+            }
             let secondNumber=Number(currentInput);
             let result;
+
             switch(operator){
                 case 'add': result=firstNumber+secondNumber; break;
                 case 'sub': result=firstNumber-secondNumber; break;
@@ -88,19 +107,29 @@ function handleClick(value){
                 case 'div': result=secondNumber===0?"❗ Cannot divide by 0":firstNumber/secondNumber; break;
                 case 'mod': result=secondNumber===0?"❗ Cannot modulus by 0":firstNumber%secondNumber; break;
             }
+
             display.value=result;
             currentInput=result.toString();
-            firstNumber=null; operator=null;
+            firstNumber=null;
+            operator=null;
             checkZeroForOperators();
             break;
+
         case 'C':
-            currentInput=""; firstNumber=null; operator=null; display.value="";
+            currentInput="";
+            firstNumber=null;
+            operator=null;
+            display.value="";
             checkZeroForOperators();
             break;
-        default: display.value="Invalid input";
+
+        default:
+            display.value="Invalid input";
     }
 }
+
 function checkZeroForOperators(){
-    let disable=currentInput==="0"&&operator!==null;
-    divBtn.disabled=disable; modBtn.disabled=disable;
+    let disable = currentInput === "0" && operator !== null;
+    divBtn.disabled = disable;
+    modBtn.disabled = disable;
 }
