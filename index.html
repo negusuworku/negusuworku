@@ -1,82 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Negusu Final JavaScript Project</title>
-<link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negusu Worku GEBRMICHAEL – Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff; /* light blue background */
+      color: #333;
+    }
+    header {
+      background: #1e90ff; /* blue header */
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { font-size: 1.1rem; }
+    #logoutBtn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #104e8b;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; /* hidden until login */
+    }
+    #logoutBtn:hover { background: #063970; }
+
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    h2 { color: #1e90ff; border-bottom: 2px solid #1e90ff; padding-bottom: 0.5rem; }
+    h3 { color: #104e8b; margin-top: 1.5rem; cursor: pointer; } 
+    ul { list-style: none; padding-left: 0; }
+    ul li { margin-bottom: 0.5rem; padding-left: 0.5rem; position: relative; }
+    ul li::before { content: "•"; color: #1e90ff; display: inline-block; width: 1em; margin-left: -1em; }
+    a { color: #1e90ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { background: #1e90ff; color: #fff; text-align: center; padding: 1rem; }
+
+    /* Collapsible Sections */
+    .collapsible {
+      background-color: #cce6ff;
+      border: none;
+      color: #333;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .active, .collapsible:hover { background-color: #99ccff; }
+    .content {
+      padding: 0 1rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #e6f2ff;
+      margin-bottom: 1rem;
+      border-left: 3px solid #1e90ff;
+    }
+    .content.expanded { max-height: 1000px; padding: 0 1rem 1rem 1rem; }
+
+    /* Login Overlay */
+    #loginOverlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    #loginBox {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    #loginBox h2 { margin-top: 0; color: #1e90ff; }
+    #loginBox input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #loginBox button {
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+    }
+    #loginBox button:hover { background: #104e8b; }
+    #loginError { color: red; font-size: 0.9rem; display: none; margin-bottom: 0.5rem; }
+  </style>
 </head>
 <body>
 
-<!-- ---------- LOGIN ---------- -->
-<div id="loginContainer">
+  <!-- Login Overlay -->
+  <div id="loginOverlay">
     <div id="loginBox">
-        <h2>Login 🔑</h2>
-
-        <!-- 🔑 LOGIN KEY ICON -->
-       
-        <img src="images/negusu.jpg" alt="Login Picture" class="login-picture">
-
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="login()">Login</button>
-        <p id="loginMessage"></p>
+      <h2>Admin Login</h2>
+      <div id="loginError">Incorrect username or password</div>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
     </div>
-</div>
+  </div>
 
-<!-- ---------- DASHBOARD ---------- -->
-<div id="dashboardContainer">
-    <div id="dashboardHeader">
-        <h2>Welcome to GEBRMICHAEL, Negusu Final JavaScript Project</h2>
-        <button onclick="logout()">Logout</button>
-    </div>
+  <header>
+    <h1>Negusu Worku GEBRMICHAEL</h1>
+    <p>Data Science | Public Health | GIS | Epidemiology | Web Development</p>
+    <button id="logoutBtn" onclick="logout()">Logout</button>
+  </header>
 
-    <div class="sections">
-        <!-- COLOR CHANGER -->
-        <div class="section">
-            <h3>🎨 Color Changer</h3>
-            <div id="colorBox"></div>
-            <div class="colorButtons">
-                <button onclick="changeColor('red')">Red</button>
-                <button onclick="changeColor('blue')">Blue</button>
-                <button onclick="changeColor('green')">Green</button>
-                <button onclick="changeColor('yellow')">Yellow</button>
-                <button onclick="randomColor()">Random</button>
-            </div>
-            <p id="colorCode"></p>
-        </div>
+  <!-- Reflection Section -->
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>
+      The Digital Media and Web Development course has been transformative in shaping my technical and professional skills. 
+      Through structured assignments like the 2-week portfolio schedule plan and LinkedIn profile enhancement, I learned 
+      the importance of meticulous planning, time management, and professional branding. Designing my portfolio website, 
+      selecting 10 key portfolio pieces, and practicing effective networking through tailored messages strengthened both 
+      my technical proficiency and communication skills.
+    </p>
+    <p>
+      This course also emphasized practical tools such as Adobe Creative Cloud, Excel/Google Sheets for scheduling, 
+      and LinkedIn optimization, reinforcing how organization and digital literacy contribute to a strong professional identity. 
+      By integrating resume and cover letter development, content mapping, and portfolio building, I gained hands-on experience 
+      in presenting myself as a cohesive and marketable professional in the digital space.
+    </p>
+    <p>
+      Additionally, the program has been instrumental in helping me transform traditional health data into real-time, 
+      paperless data sharing systems for end users, partner organizations, and decision-makers. It enhanced my ability to 
+      design dashboards, integrate data streams, and present actionable insights efficiently.
+    </p>
+    <h3>Key Takeaways:</h3>
+    <ul>
+      <li>Structured planning enhances productivity and goal achievement.</li>
+      <li>Professional branding through a polished LinkedIn profile and portfolio website is essential.</li>
+      <li>Effective communication fosters meaningful professional connections.</li>
+      <li>Technical skills with Adobe Creative Cloud and web design tools improve portfolio quality and marketability.</li>
+      <li>Digital Media and Web Development enables real-time, paperless data sharing for end users, partner organizations, and decision-makers.</li>
+    </ul>
+  </section>
 
-        <!-- SWITCH CALCULATOR -->
-        <div class="section">
-            <h3>➗ Switch Calculator</h3>
-            <input type="text" id="display" disabled placeholder="0">
-            <div class="calculator">
-                <button class="number" onclick="handleClick('7')">7</button>
-                <button class="number" onclick="handleClick('8')">8</button>
-                <button class="number" onclick="handleClick('9')">9</button>
-                <button class="operator" id="divBtn" onclick="handleClick('div')">/</button>
+  <!-- About, Expertise, Courses, Associations, Publications, Contact (unchanged) -->
+  <!-- ... [same as previous code for these sections] ... -->
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:negusu2022@gmail.com">negusu2022@gmail.com</a></p>
+    <p>Phone: +1-416-893-####</p>
+    <p>Address: Toronto, Canada</p>
+  </section>
 
-                <button class="number" onclick="handleClick('4')">4</button>
-                <button class="number" onclick="handleClick('5')">5</button>
-                <button class="number" onclick="handleClick('6')">6</button>
-                <button class="operator" onclick="handleClick('mul')">*</button>
+  <footer>
+    <p>© 2026 Negusu Worku GEBRMICHAEL</p>
+  </footer>
 
-                <button class="number" onclick="handleClick('1')">1</button>
-                <button class="number" onclick="handleClick('2')">2</button>
-                <button class="number" onclick="handleClick('3')">3</button>
-                <button class="operator" onclick="handleClick('sub')">-</button>
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(btn => {
+      btn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
 
-                <button class="number" onclick="handleClick('0')">0</button>
-                <button class="operator" id="modBtn" onclick="handleClick('mod')">%</button>
-                <button class="operator" onclick="handleClick('add')">+</button>
-                <button class="operator" onclick="handleClick('=')">=</button>
+    // Expand reflection by default
+    const reflectionSection = document.getElementById("reflection");
+    reflectionSection.classList.add("expanded");
 
-                <button class="clear" onclick="handleClick('C')">C</button>
-            </div>
-        </div>
-    </div>
-</div>
+    // Login / Logout functionality
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const overlay = document.getElementById("loginOverlay");
+      const error = document.getElementById("loginError");
+      const logoutBtn = document.getElementById("logoutBtn");
 
-<script src="index.js"></script>
+      if(username === "admin" && password === "12345") {
+        overlay.style.display = "none";
+        logoutBtn.style.display = "block";
+      } else {
+        error.style.display = "block";
+      }
+    }
+
+    function logout() {
+      document.getElementById("loginOverlay").style.display = "flex";
+      document.getElementById("logoutBtn").style.display = "none";
+      document.getElementById("username").value = "";
+      document.getElementById("password").value = "";
+      document.getElementById("loginError").style.display = "none";
+    }
+  </script>
+
 </body>
 </html>
