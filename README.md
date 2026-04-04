@@ -8,7 +8,7 @@
 
 With over 30 years of experience, I specialize in data science, public health emergency response, GIS mapping, and epidemiological research across Africa, Asia, the Middle East, Europe, and North America. Throughout my career, I have collaborated with major global organizations, including WHO, UNICEF, CDC, FHI/USAID, and Save the Children.
 
-I hold advanced postgraduate fellow diplomas in Applied Epidemiology (Emory University, Atlanta, USA) and Data Science & Machine Learning (Toronto, Canada). I have contributed to more than 100 public health and field epidemiology research theses at various schools of public health, authored over 10 global publications, and supported numerous national and international health surveys.
+I hold advanced postgraduate fellow certificate in Applied Epidemiology (Emory University, Atlanta, USA) and Data Science & Machine Learning (Toronto, Canada). I have contributed to more than 100 public health and field epidemiology research theses at various schools of public health, authored over 10 global publications, and supported numerous national and international health surveys.
 
 Currently, I am developing a personal website to showcase an infographics platform that will host my three decades of information management work from Africa, Asia, middle east-Europe and USA and Canada.
 
